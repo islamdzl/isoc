@@ -21,7 +21,7 @@ const screens = [`
     </div>`]
 var data1 , data2 ,this_ws_id ,target_ws_id , inde , S = 0
 var ping = []
-const Soket = new WebSocket('wss://isocsl.onrender.com')
+const Soket = new WebSocket('ws://exec.onrender.com')
 Soket.addEventListener('open',(event)=>{
     console.log('connected to Server')
     Soket.send('get_me_data')
