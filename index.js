@@ -1,5 +1,5 @@
 const PORT = process.env.PORT || 2007;
-const websoket_port = 443
+const websoket_port = 80
 
 const express = require('express');
 const WebSoket = require('ws')
