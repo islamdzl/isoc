@@ -1,0 +1,39 @@
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+#download{
+    position: relative;
+    justify-content: center;
+    width: 300px;
+    background: black;
+    color: red;
+    font-size: 50px;
+    font-weight: 500;
+    height: 110px;
+    border-radius: 30px;
+    border-color: red;
+    border-width: 3px;
+    transform: translate(0,450px);
+    transition: 300ms;
+}
+#download:hover{
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+#text {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 150px;
+}
