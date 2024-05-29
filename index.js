@@ -1,11 +1,11 @@
 const PORT = process.env.PORT || 2007;
-const websoket_port = 80
+const websoket_port = 8080
 
 const express = require('express');
 const WebSoket = require('ws')
 const cors = require('cors');
 const app = express();
-const wss = new WebSoket.Server({port:websoket_port})
+const wss = new WebSoketServer({port:websoket_port})
 const clientsS = new Set();
 const clientsM = new Map();
 app.use(cors({origin:'*'}));
