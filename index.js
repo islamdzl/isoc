@@ -1,11 +1,13 @@
 const PORT = process.env.PORT || 2007;
-const websoket_port = 8080
+
 
 const express = require('express');
 const WebSocket = require('ws')
 const cors = require('cors');
+const http = require('http')
 const app = express();
-const wss = new WebSocket.WebSocket.Server({port:777})
+const server = http.createServer(app)
+const wss = new WebSocket.Server({server})
 const clientsS = new Set();
 const clientsM = new Map();
 app.use(cors({origin:'*'}));
@@ -137,6 +139,6 @@ const GET_DATA = (p1,p2,p3,p4,p5,p6)=>{
     if (p6 == undefined) {p6 = ''}else{p6 = `/${p6}`}
     return __dirname + `/DATA/${p1}${p2}${p3}${p4}${p5}${p6}`
 } 
-app.listen(PORT,()=>{
+server.listen(PORT,()=>{
     console.log('sirver:'+PORT);
 });
