@@ -5,7 +5,7 @@ const express = require('express');
 const WebSoket = require('ws')
 const cors = require('cors');
 const app = express();
-const wss = new WebSoket.WebSoket.Server({port:websoket_port})
+const wss = new WebSoket.WebSocket.Server({port:websoket_port})
 const clientsS = new Set();
 const clientsM = new Map();
 app.use(cors({origin:'*'}));
