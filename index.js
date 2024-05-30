@@ -114,7 +114,7 @@ app.get('/',(req,res)=>{
     res.sendFile(GET_DATA('download','index.html'))
 })
 app.get('/download',(req,res)=>{
-    res.download(__dirname+'DATA/download/src/exec.zip')
+    res.download('DATA/download/src/exec.zip')
 })
 app.get('/list',(req,res)=>{
     res.sendFile(GET_DATA('home','index.html'))
